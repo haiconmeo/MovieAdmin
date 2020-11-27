@@ -76,7 +76,7 @@ const Tables2 = () => {
   const [index, setindex] = useState(1)
   const [end, setend] = useState()
   const getend_id = async () => {
-    let callAPI = "http://django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/Movie_list_end"
+    let callAPI = "//django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/Movie_list_end"
 
     try {
       const data = await Axios.get(
@@ -93,7 +93,7 @@ const Tables2 = () => {
 
     let next = index.toString()
     console.log("dmm", next)
-    let callAPI = "http://django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/movie/" + next
+    let callAPI = "//django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/movie/" + next
     console.log("jfnskjad", callAPI)
     try {
       const data = await Axios.get(
