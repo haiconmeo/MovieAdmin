@@ -14,7 +14,7 @@ function login(username,password){
         body:JSON.stringify({username,password})
     };
     // console.log(config.url+"auth/login/");
-    return fetch("http://django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/auth/loginAdmin/",requestOptions)
+    return fetch("//django-api.eba-jmjspmms.ap-southeast-1.elasticbeanstalk.com/api/auth/loginAdmin/",requestOptions)
     .then(handleResponse)
     .then(user=>{
         localStorage.setItem('user',JSON.stringify(user))
